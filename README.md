@@ -1,12 +1,12 @@
 # Thejoinventure
 This project, "Thejoinventure", was a team effort by Confiance &amp; Edison. We used GitHub to collaborate on PL/SQL window function queries, ensuring shared learning and a cohesive result."
 ## 👥 Team Members
-- Student A
-- Student B
+- Edson MUGABO
+- Confiance UFITAMAHORO
 
 ## 📌 Instructor GitHub Username: `ericmaniraguha`
 
-## 📂 Group Name: Commit_the_Query
+## 📂 Project Name: Thejoinventure
 
 ## 🎯 Objective
 This project demonstrates the use of SQL **Window Functions** in Oracle using a realistic dataset of employees, departments, and performance ratings.
