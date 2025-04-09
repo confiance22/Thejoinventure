@@ -32,3 +32,15 @@ FROM (
     JOIN departments d ON e.dept_id = d.dept_id
 )
 WHERE salary_rank <= 3;
+
+-----Finding the Earliest Records (First 2 to Join per Department)-----
+
+SELECT *
+FROM (
+    SELECT 
+        e.name, d.dept_name, e.hire_date,
+        ROW_NUMBER() OVER (PARTITION BY d.dept_name ORDER BY e.hire_date) AS join_order
+    FROM employees e
+    JOIN departments d ON e.dept_id = d.dept_id
+)
+WHERE join_order <= 2;
