@@ -12,4 +12,11 @@ SELECT
     END AS comparison
 FROM employees e;
 
+-----Ranking Data within a Category (Salary by Department)-----
 
+SELECT 
+    e.name, d.dept_name, e.salary,
+    RANK() OVER (PARTITION BY d.dept_name ORDER BY e.salary DESC) AS rank_in_dept,
+    DENSE_RANK() OVER (PARTITION BY d.dept_name ORDER BY e.salary DESC) AS dense_rank
+FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id;
