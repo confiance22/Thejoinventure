@@ -44,3 +44,12 @@ FROM (
     JOIN departments d ON e.dept_id = d.dept_id
 )
 WHERE join_order <= 2;
+
+-------Aggregation with Window Functions (Max Salaries)------
+
+SELECT 
+    e.name, d.dept_name, e.salary,
+    MAX(e.salary) OVER (PARTITION BY d.dept_name) AS max_in_dept,
+    MAX(e.salary) OVER () AS overall_max
+FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id;
