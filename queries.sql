@@ -20,3 +20,15 @@ SELECT
     DENSE_RANK() OVER (PARTITION BY d.dept_name ORDER BY e.salary DESC) AS dense_rank
 FROM employees e
 JOIN departments d ON e.dept_id = d.dept_id;
+
+------Identifying Top 3 Records per Department (Highest Salaries)------
+
+SELECT *
+FROM (
+    SELECT 
+        e.name, d.dept_name, e.salary,
+        RANK() OVER (PARTITION BY d.dept_name ORDER BY e.salary DESC) AS salary_rank
+    FROM employees e
+    JOIN departments d ON e.dept_id = d.dept_id
+)
+WHERE salary_rank <= 3;
