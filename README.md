@@ -15,3 +15,4 @@ This project demonstrates the use of SQL **Window Functions** in Oracle using a 
 - `employees` – Details of each employee including department and salary.
 - `departments` – Lookup table for department names.
 - `performance` – Year-wise performance reviews.
+
