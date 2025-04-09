@@ -53,3 +53,12 @@ SELECT
     MAX(e.salary) OVER () AS overall_max
 FROM employees e
 JOIN departments d ON e.dept_id = d.dept_id;
+
+-----Bonus: Performance Trends Using LAG()-------
+
+SELECT 
+    e.name, p.review_year, p.rating,
+    LAG(p.rating) OVER (PARTITION BY p.emp_id ORDER BY p.review_year) AS last_year_rating,
+    p.rating - LAG(p.rating) OVER (PARTITION BY p.emp_id ORDER BY p.review_year) AS rating_change
+FROM performance p
+JOIN employees e ON p.emp_id = e.emp_id;
