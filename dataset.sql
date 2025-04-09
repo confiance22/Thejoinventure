@@ -1,8 +1,4 @@
 ------------DATASET SQL---------------------
--- Drop existing tables
-DROP TABLE performance;
-DROP TABLE employees;
-DROP TABLE departments;
 
 -- Departments
 CREATE TABLE departments (
