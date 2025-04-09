@@ -20,15 +20,15 @@ CREATE TABLE employees (
     FOREIGN KEY (dept_id) REFERENCES departments(dept_id)
 );
 
-INSERT INTO employees VALUES (1, 'Alice', 1, 60000, TO_DATE('2019-05-01', 'YYYY-MM-DD'));
+INSERT INTO employees VALUES (1, 'kevin', 1, 60000, TO_DATE('2019-05-01', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (2, 'Bob', 1, 75000, TO_DATE('2018-03-15', 'YYYY-MM-DD'));
-INSERT INTO employees VALUES (3, 'Carol', 2, 80000, TO_DATE('2020-11-23', 'YYYY-MM-DD'));
-INSERT INTO employees VALUES (4, 'David', 2, 90000, TO_DATE('2021-01-10', 'YYYY-MM-DD'));
+INSERT INTO employees VALUES (3, 'kizzy', 2, 80000, TO_DATE('2020-11-23', 'YYYY-MM-DD'));
+INSERT INTO employees VALUES (4, 'aime', 2, 90000, TO_DATE('2021-01-10', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (5, 'Emma', 3, 65000, TO_DATE('2019-06-17', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (6, 'Frank', 3, 65000, TO_DATE('2022-08-01', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (7, 'Grace', 1, 72000, TO_DATE('2021-12-11', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (8, 'Henry', 2, 95000, TO_DATE('2017-09-08', 'YYYY-MM-DD'));
-INSERT INTO employees VALUES (9, 'Ivy', 3, 69000, TO_DATE('2016-01-03', 'YYYY-MM-DD'));
+INSERT INTO employees VALUES (9, 'tonny', 3, 69000, TO_DATE('2016-01-03', 'YYYY-MM-DD'));
 
 -- Performance
 CREATE TABLE performance (
@@ -49,3 +49,7 @@ INSERT INTO performance VALUES (6, 2023, 4.0);
 INSERT INTO performance VALUES (7, 2024, 4.7);
 INSERT INTO performance VALUES (8, 2023, 4.9);
 INSERT INTO performance VALUES (9, 2023, 4.1);
+
+
+
+
