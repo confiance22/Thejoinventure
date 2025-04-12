@@ -16,6 +16,9 @@ This project demonstrates the use of SQL **Window Functions** in Oracle using a 
 - `departments` – Lookup table for department names.
 - `performance` – Year-wise performance reviews.
 
+  ![CREATING TABLES](https://github.com/user-attachments/assets/4d12fb3e-69a5-4338-8f5f-45205a4a4ca3)
+
+
 ## 🧠 Completed Tasks
 
 ### ✅ Compare Values with Previous or Next Records
