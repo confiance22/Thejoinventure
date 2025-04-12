@@ -62,3 +62,4 @@ SELECT
     p.rating - LAG(p.rating) OVER (PARTITION BY p.emp_id ORDER BY p.review_year) AS rating_change
 FROM performance p
 JOIN employees e ON p.emp_id = e.emp_id;
+
